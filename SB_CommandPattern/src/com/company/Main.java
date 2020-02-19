@@ -9,6 +9,13 @@ public class Main {
         ElectronicDevice geFan = DeviceFactory.getDevice(DeviceFactory.DeviceEnum.FAN);
         ElectronicDevice spa = DeviceFactory.getDevice(DeviceFactory.DeviceEnum.JACUZZI);
 
+        JacuzziMediumCommand JacuzziMedium =
+                new JacuzziMediumCommand(spa);
+        JacuzziHighCommand JacuzziHigh =
+                new JacuzziHighCommand(Jacuzzi);
+        JacuzziOffCommand JacuzziOff =
+                new JacuzziOffCommand(Jacuzzi);
+
         int numOfEnums = DeviceFactory.DeviceEnum.values().length;
         RemoteControl remote = new RemoteControl((numOfEnums));
 

@@ -1,11 +1,11 @@
 package com.company;
 
-public class JaccuziLowCommand implements Command{
+public class JacuzziMediumCommand implements Command{
 
     Jacuzzi jacuzzi;
     int prevSpeed;
 
-    public JaccuziLowCommand(Jacuzzi jacuzzi) {
+    public JacuzziMediumCommand(Jacuzzi jacuzzi) {
         this.jacuzzi = jacuzzi;
     }
 
@@ -27,5 +27,4 @@ public class JaccuziLowCommand implements Command{
             jacuzzi.off(); }
 
     }
-
 }
