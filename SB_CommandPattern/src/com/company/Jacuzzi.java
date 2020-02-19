@@ -1,35 +1,52 @@
 package com.company;
 
-public class Jacuzzi implements WaterFeature{
+public class Jacuzzi implements ElectronicDevice{
+
+    public static final int HIGH = 3;
 
     @Override
     public void on() {
-        System.out.println("Jacuzzi is on");
+
     }
+
+    @Override
+    public void volumeUp() {
+
+    }
+
+    @Override
+    public void volumeDown() {
+
+    }
+
+    public static final int MEDIUM = 2;
+    public static final int LOW = 1;
+    public static final int OFF = 0;
+    String location;
+    int speed;
 
     @Override
     public void off() {
-        System.out.println("Jacuzzi is off");
+        speed = OFF;
     }
 
     @Override
-    public void jetsOn() {
-        System.out.println("Jets are on");
+    public void high() {
+        speed = HIGH;
     }
 
     @Override
-    public void jetsOff() {
-        System.out.println("Jets are off");
+    public void medium() {
+        speed = MEDIUM;
     }
 
     @Override
-    public void circulate() {
-        System.out.println("Water is circulating");
+    public void low() {
+        speed = LOW;
     }
 
     @Override
-    public void setTemperature() {
-        System.out.println("Temperature is set");
+    public int getSpeed() {
+        return speed;
     }
-
 }

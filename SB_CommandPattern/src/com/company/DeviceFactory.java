@@ -9,6 +9,12 @@ public class DeviceFactory {
             }
         },
 
+        JACUZZI {
+            public ElectronicDevice returnClass() {
+                return new Jacuzzi();
+            }
+        },
+
         FAN {
             public ElectronicDevice returnClass() {
                 return new CeilingFan();
